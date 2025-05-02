@@ -22,7 +22,7 @@ export default function Home() {
             alt="Garden Bed"
             width={200}
             height={200}
-            />
+          />
         </div>
       </div>
     </main>
