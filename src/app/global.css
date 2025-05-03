@@ -1,4 +1,42 @@
-body{
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
     background-color: antiquewhite;
     padding: 2%;
+}
+
+@layer components {
+  .main-container {
+    @apply flex flex-col items-center justify-center min-h-screen p-8;
+  }
+  
+  .nav-menu {
+    @apply flex gap-8 mb-12;
+  }
+  
+  .nav-link {
+    @apply hover:underline;
+  }
+  
+  .wrapper {
+    @apply flex flex-col md:flex-row items-center justify-between gap-12 max-w-6xl w-full;
+  }
+  
+  .content-left {
+    @apply flex flex-col gap-6 md:w-1/2;
+  }
+  
+  .content-right {
+    @apply md:w-1/2 flex justify-center;
+  }
+  
+  .shop-button {
+    @apply inline-block bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors;
+  }
+  
+  .featured-image {
+    @apply rounded-lg shadow-lg;
+  }
 }
